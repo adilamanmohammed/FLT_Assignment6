@@ -1,0 +1,492 @@
+Script started on 2023-11-13 12:22:12+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="159" LINES="16"]
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ clear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ pythi[Koclear
+[H[2J[3J[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python 2in[K[K[Kprog6.py 2input.txt output.txt 
+Final Productions:
+<A> ::= <B> <C>
+<A> ::= a
+<B> ::= <C> <A>
+<B> ::= a b
+<C> ::= a
+<C> ::= a <B>
+<C> ::= a b <C> <B>
+<C> ::= a <C'>
+<C> ::= a <B> <C'>
+<C> ::= a b <C> <B> <C'>
+<C'> ::= <C> <C'>
+<C'> ::= <C>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py 2input.txt output.txt [C[C[C[1P[1@1
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment6/prog6.py", line 533, in <module>
+    Main(input_filename, output_filename)
+  File "/workspaces/FLT_Assignment6/prog6.py", line 478, in Main
+    grammarRules, terminals, nonTerminals, startSymbol = fetchUpdatedGrammarRules(inputFilePath)
+  File "/workspaces/FLT_Assignment6/prog6.py", line 154, in fetchUpdatedGrammarRules
+    terminalSymbols, nonTerminalSymbols, startSymbol = readGrammarSymbols(filepath)
+  File "/workspaces/FLT_Assignment6/prog6.py", line 17, in readGrammarSymbols
+    with open(filename, 'r') as grammar_file:
+FileNotFoundError: [Errno 2] No such file or directory: '2inp1t.txt'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py 2inp1t.txt output.txt u[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1@3
+Final Productions:
+<E> ::= ( <E> )
+<E> ::= <T> * <F>
+<E> ::= id
+<E> ::= ( <E> ) <E'>
+<E> ::= <T> * <F> <E'>
+<E> ::= id <E'>
+<E'> ::= + <T> <E'>
+<E'> ::= + <T>
+<T> ::= ( <E> )
+<T> ::= id
+<T> ::= ( <E> ) <T'>
+<T> ::= id <T'>
+<T'> ::= * <F> <T'>
+<T'> ::= * <F>
+<F> ::= ( <E> )
+<F> ::= id
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ 
+[K[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py 3input.txt output.txt [1P
+Final Productions:
+<expression> ::= ( <expression> )
+<expression> ::= id
+<expression> ::= ( <expression> ) <expression'>
+<expression> ::= id <expression'>
+<expression'> ::= + <expression> <expression'>
+<expression'> ::= + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt [1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Final Productions:
+<E> ::= ( <E> )
+<E> ::= <T> * <F>
+<E> ::= id
+<E> ::= ( <E> ) <E'>
+<E> ::= <T> * <F> <E'>
+<E> ::= id <E'>
+<E'> ::= + <T> <E'>
+<E'> ::= + <T>
+<T> ::= ( <E> )
+<T> ::= id
+<T> ::= ( <E> ) <T'>
+<T> ::= id <T'>
+<T'> ::= * <F> <T'>
+<T'> ::= * <F>
+<F> ::= ( <E> )
+<F> ::= id
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py 3input.txt output.txt [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Final Productions:
+<expression> ::= ( <expression> )
+<expression> ::= id
+<expression> ::= ( <expression> ) <expression'>
+<expression> ::= id <expression'>
+<expression'> ::= + <expression> <expression'>
+<expression'> ::= + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt [1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Final Productions:
+<E> ::= ( <E> )
+<E> ::= <T> * <F>
+<E> ::= id
+<E> ::= ( <E> ) <E'>
+<E> ::= <T> * <F> <E'>
+<E> ::= id <E'>
+<E'> ::= + <T> <E'>
+<E'> ::= + <T>
+<T> ::= ( <E> )
+<T> ::= id
+<T> ::= ( <E> ) <T'>
+<T> ::= id <T'>
+<T'> ::= * <F> <T'>
+<T'> ::= * <F>
+<F> ::= ( <E> )
+<F> ::= id
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py 3input.txt output.txt [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Final Productions:
+<expression> ::= ( <expression> )
+<expression> ::= id
+<expression> ::= ( <expression> ) <expression'>
+<expression> ::= id <expression'>
+<expression'> ::= + <expression> <expression'>
+<expression'> ::= + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+Final Productions:
+<expression> ::= ( <expression> )
+<expression> ::= id
+<expression> ::= ( <expression> ) <expression'>
+<expression> ::= id <expression'>
+<expression'> ::= + <expression> <expression'>
+<expression'> ::= + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+Final Productions:
+<expression> ::= ( <expression> )
+<expression> ::= id
+<expression> ::= ( <expression> ) <expression'>
+<expression> ::= id <expression'>
+<expression'> ::= + <expression> <expression'>
+<expression'> ::= + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt [1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Final Productions:
+<E> ::= ( <E> )
+<E> ::= <T> * <F>
+<E> ::= id
+<E> ::= ( <E> ) <E'>
+<E> ::= <T> * <F> <E'>
+<E> ::= id <E'>
+<E'> ::= + <T> <E'>
+<E'> ::= + <T>
+<T> ::= ( <E> )
+<T> ::= id
+<T> ::= ( <E> ) <T'>
+<T> ::= id <T'>
+<T'> ::= * <F> <T'>
+<T'> ::= * <F>
+<F> ::= ( <E> )
+<F> ::= id
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py 3input.txt output.txt [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Final Productions:
+<expression> ::= ( <expression> )
+<expression> ::= id
+<expression> ::= ( <expression> ) <expression'>
+<expression> ::= id <expression'>
+<expression'> ::= + <expression> <expression'>
+<expression'> ::= + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt [1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Final Productions:
+<expression> ::= ( <expression> )
+<expression> ::= id
+<expression> ::= ( <expression> ) <expression'>
+<expression> ::= id <expression'>
+<expression'> ::= + <expression> <expression'>
+<expression'> ::= + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+Final Productions:
+<expression> ::= ( <expression> )
+<expression> ::= id
+<expression> ::= ( <expression> ) <expression'>
+<expression> ::= id <expression'>
+<expression'> ::= + <expression> <expression'>
+<expression'> ::= + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+Final Productions:
+<expression> ::= ( <expression> )
+<expression> ::= id
+<expression> ::= ( <expression> ) <expression'>
+<expression> ::= id <expression'>
+<expression'> ::= + <expression> <expression'>
+<expression'> ::= + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+Final Productions:
+<expression> ::= ( <expression> )
+<expression> ::= id
+<expression> ::= ( <expression> ) <expression'>
+<expression> ::= id <expression'>
+<expression'> ::= + <expression> <expression'>
+<expression'> ::= + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+^[[AFinal Productions:
+<expression> ::= ( <expression> )
+<expression> ::= id
+<expression> ::= ( <expression> ) <expression'>
+<expression> ::= id <expression'>
+<expression'> ::= + <expression> <expression'>
+<expression'> ::= + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt [1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Final Productions:
+<E> ::= ( <E> )
+<E> ::= <T> * <F>
+<E> ::= id
+<E> ::= ( <E> ) <E'>
+<E> ::= <T> * <F> <E'>
+<E> ::= id <E'>
+<E'> ::= + <T> <E'>
+<E'> ::= + <T>
+<T> ::= ( <E> )
+<T> ::= id
+<T> ::= ( <E> ) <T'>
+<T> ::= id <T'>
+<T'> ::= * <F> <T'>
+<T'> ::= * <F>
+<F> ::= ( <E> )
+<F> ::= id
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py 3input.txt output.txt 
+Final Productions:
+<E> ::= ( <E> )
+<E> ::= <T> * <F>
+<E> ::= id
+<E> ::= ( <E> ) <E'>
+<E> ::= <T> * <F> <E'>
+<E> ::= id <E'>
+<E'> ::= + <T> <E'>
+<E'> ::= + <T>
+<T> ::= ( <E> )
+<T> ::= id
+<T> ::= ( <E> ) <T'>
+<T> ::= id <T'>
+<T'> ::= * <F> <T'>
+<T'> ::= * <F>
+<F> ::= ( <E> )
+<F> ::= id
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py 3input.txt output.txt 
+Final Productions:
+<E> ::= ( <E> )
+<E> ::= <T> * <F>
+<E> ::= id
+<E> ::= ( <E> ) <E'>
+<E> ::= <T> * <F> <E'>
+<E> ::= id <E'>
+<E'> ::= + <T> <E'>
+<E'> ::= + <T>
+<T> ::= ( <E> )
+<T> ::= id
+<T> ::= ( <E> ) <T'>
+<T> ::= id <T'>
+<T'> ::= * <F> <T'>
+<T'> ::= * <F>
+<F> ::= ( <E> )
+<F> ::= id
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py 3input.txt output.txt [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Final Productions:
+<E> ::= ( <E> )
+<E> ::= <T> * <F>
+<E> ::= id
+<E> ::= ( <E> ) <E'>
+<E> ::= <T> * <F> <E'>
+<E> ::= id <E'>
+<E'> ::= + <T> <E'>
+<E'> ::= + <T>
+<T> ::= ( <E> )
+<T> ::= id
+<T> ::= ( <E> ) <T'>
+<T> ::= id <T'>
+<T'> ::= * <F> <T'>
+<T'> ::= * <F>
+<F> ::= ( <E> )
+<F> ::= id
+^[[A[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py 3input.txt output.txt [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Final Productions:
+<expression> ::= ( <expression> )
+<expression> ::= id
+<expression> ::= ( <expression> ) <expression'>
+<expression> ::= id <expression'>
+<expression'> ::= + <expression> <expression'>
+<expression'> ::= + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ 
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt [1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Final Productions:
+<E> ::= ( <E> )
+<E> ::= <T> * <F>
+<E> ::= id
+<E> ::= ( <E> ) <E'>
+<E> ::= <T> * <F> <E'>
+<E> ::= id <E'>
+<E'> ::= + <T> <E'>
+<E'> ::= + <T>
+<T> ::= ( <E> )
+<T> ::= id
+<T> ::= ( <E> ) <T'>
+<T> ::= id <T'>
+<T'> ::= * <F> <T'>
+<T'> ::= * <F>
+<F> ::= ( <E> )
+<F> ::= id
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py 3input.txt output.txt [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Final Productions:
+<expression> ::= ( <expression> )
+<expression> ::= id
+<expression> ::= ( <expression> ) <expression'>
+<expression> ::= id <expression'>
+<expression'> ::= + <expression> <expression'>
+<expression'> ::= + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+Final Productions:
+<expression> ::= ( <expression> )
+<expression> ::= id
+<expression> ::= ( <expression> ) <expression'>
+<expression> ::= id <expression'>
+<expression'> ::= + <expression> <expression'>
+<expression'> ::= + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt [1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Final Productions:
+<expression> ::= ( <expression> )
+<expression> ::= id
+<expression> ::= ( <expression> ) <expression'>
+<expression> ::= id <expression'>
+<expression'> ::= + <expression> <expression'>
+<expression'> ::= + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+Final Productions:
+<expression> ::= ( <expression> )
+<expression> ::= id
+<expression> ::= ( <expression> ) <expression'>
+<expression> ::= id <expression'>
+<expression'> ::= + <expression> <expression'>
+<expression'> ::= + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+  File "/workspaces/FLT_Assignment6/prog6.py", line 507
+    restructuredGrammar = eliminateLeftRecursion(restructuredGrammar
+                                                ^
+SyntaxError: '(' was never closed
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+  File "/workspaces/FLT_Assignment6/prog6.py", line 507
+    restructuredGrammar = eliminateLeftRecursion(restructuredGrammar
+                                                ^
+SyntaxError: '(' was never closed
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+  File "/workspaces/FLT_Assignment6/prog6.py", line 507
+    restructuredGrammar = eliminateLeftRecursion(restructuredGrammar
+                                                ^
+SyntaxError: '(' was never closed
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+  File "/workspaces/FLT_Assignment6/prog6.py", line 507
+    restructuredGrammar = eliminateLeftRecursion(restructuredGrammar
+                                                ^
+SyntaxError: '(' was never closed
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+  File "/workspaces/FLT_Assignment6/prog6.py", line 507
+    restructuredGrammar = eliminateLeftRecursion(restructuredGrammar
+                                                ^
+SyntaxError: '(' was never closed
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment6/prog6.py", line 533, in <module>
+    Main(input_filename, output_filename)
+  File "/workspaces/FLT_Assignment6/prog6.py", line 502, in Main
+    restructuredGrammar = eliminateUnitProductions(restructuredGammar)
+NameError: name 'restructuredGammar' is not defined. Did you mean: 'restructuredGrammar'?
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment6/prog6.py", line 533, in <module>
+    Main(input_filename, output_filename)
+  File "/workspaces/FLT_Assignment6/prog6.py", line 502, in Main
+    restructuredGrammar = eliminateUnitProductions(restructuredGammar)
+NameError: name 'restructuredGammar' is not defined. Did you mean: 'restructuredGrammar'?
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+Final Productions:
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment6/prog6.py", line 533, in <module>
+    Main(input_filename, output_filename)
+  File "/workspaces/FLT_Assignment6/prog6.py", line 507, in Main
+    restructuredGrammar = liminateLeftRecursion(restructuredGrammar)
+NameError: name 'liminateLeftRecursion' is not defined. Did you mean: 'eliminateLeftRecursion'?
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+Final Productions:
+Traceback (most recent call last):
+  File "/workspaces/FLT_Assignment6/prog6.py", line 533, in <module>
+    Main(input_filename, output_filename)
+  File "/workspaces/FLT_Assignment6/prog6.py", line 507, in Main
+    restructuredGrammar = liminateLeftRecursion(restructuredGrammar)
+NameError: name 'liminateLeftRecursion' is not defined. Did you mean: 'eliminateLeftRecursion'?
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+  File "/workspaces/FLT_Assignment6/prog6.py", line 526
+    if __name__ == "__main__"
+                             ^
+SyntaxError: expected ':'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+  File "/workspaces/FLT_Assignment6/prog6.py", line 522
+    for rule in finalFormattedRules
+                                   ^
+SyntaxError: expected ':'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+  File "/workspaces/FLT_Assignment6/prog6.py", line 522
+    for rule in finalFormattedRules
+                                   ^
+SyntaxError: expected ':'
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+  File "/workspaces/FLT_Assignment6/prog6.py", line 504
+    print("Final Productions:"
+         ^
+SyntaxError: '(' was never closed
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+  File "/workspaces/FLT_Assignment6/prog6.py", line 274
+    updated_rules[lhs] = [rhs for rhs i rhs_list if rhs not in grammar_rules]
+                                  ^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+  File "/workspaces/FLT_Assignment6/prog6.py", line 274
+    updated_rules[lhs] = [rhs for rhs i rhs_list if rhs not in grammar_rules]
+                                  ^^^^^
+SyntaxError: invalid syntax. Perhaps you forgot a comma?
+[0;32m@adilamanm01 [1;31m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt 
+Final Productions:
+<expression> ::= ( <expression> )
+<expression> ::= id
+<expression> ::= ( <expression> ) <expression'>
+<expression> ::= id <expression'>
+<expression'> ::= + <expression> <expression'>
+<expression'> ::= + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt [1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Final Productions:
+<E> ::= ( <E> )
+<E> ::= <T> * <F>
+<E> ::= id
+<E> ::= ( <E> ) <E'>
+<E> ::= <T> * <F> <E'>
+<E> ::= id <E'>
+<E'> ::= + <T> <E'>
+<E'> ::= + <T>
+<T> ::= ( <E> )
+<T> ::= id
+<T> ::= ( <E> ) <T'>
+<T> ::= id <T'>
+<T'> ::= * <F> <T'>
+<T'> ::= * <F>
+<F> ::= ( <E> )
+<F> ::= id
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py 3input.txt output.txt [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Final Productions:
+<E> ::= ( <E> )
+<E> ::= <T> * <F>
+<E> ::= id
+<E> ::= ( <E> ) <E'>
+<E> ::= <T> * <F> <E'>
+<E> ::= id <E'>
+<E'> ::= + <T> <E'>
+<E'> ::= + <T>
+<T> ::= ( <E> )
+<T> ::= id
+<T> ::= ( <E> ) <T'>
+<T> ::= id <T'>
+<T'> ::= * <F> <T'>
+<T'> ::= * <F>
+<F> ::= ( <E> )
+<F> ::= id
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py 3input.txt output.txt [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Final Productions:
+<expression> ::= ( <expression> )
+<expression> ::= id
+<expression> ::= ( <expression> ) <expression'>
+<expression> ::= id <expression'>
+<expression'> ::= + <expression> <expression'>
+<expression'> ::= + <expression>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py input.txt output.txt [1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+Final Productions:
+<E> ::= ( <E> )
+<E> ::= <T> * <F>
+<E> ::= id
+<E> ::= ( <E> ) <E'>
+<E> ::= <T> * <F> <E'>
+<E> ::= id <E'>
+<E'> ::= + <T> <E'>
+<E'> ::= + <T>
+<T> ::= ( <E> )
+<T> ::= id
+<T> ::= ( <E> ) <T'>
+<T> ::= id <T'>
+<T'> ::= * <F> <T'>
+<T'> ::= * <F>
+<F> ::= ( <E> )
+<F> ::= id
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ python prog6.py 3input.txt output.txt [1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@3[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C2inp1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cu[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cclear[Kpython prog6.py 2input.txt output.txt 
+Final Productions:
+<A> ::= <B> <C>
+<A> ::= a
+<B> ::= <C> <A>
+<B> ::= a b
+<C> ::= a
+<C> ::= a <B>
+<C> ::= a b <C> <B>
+<C> ::= a <C'>
+<C> ::= a <B> <C'>
+<C> ::= a b <C> <B> <C'>
+<C'> ::= <C> <C'>
+<C'> ::= <C>
+[0;32m@adilamanm01 [0m➜ [1;34m/workspaces/FLT_Assignment6 [0;36m([1;31mmain[0;36m) [0m$ exit
+
+Script done on 2023-11-13 13:25:58+00:00 [COMMAND_EXIT_CODE="0"]
